@@ -9,7 +9,7 @@ use illuminate\Support\Str;
 
 class VolunteerController extends Controller
 {
-    //return view volunteer index
+    //return view volunteer index (list of volunteer)
     public function index()
     {
         return view('volunteer.index', [
@@ -17,7 +17,7 @@ class VolunteerController extends Controller
         ]);
     }
 
-    //add new volunteer
+    //create form new volunteer
     public function create()
     {
         //only allow supervisor (check role)

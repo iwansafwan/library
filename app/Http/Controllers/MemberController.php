@@ -16,13 +16,13 @@ class MemberController extends Controller
         ]);
     }
 
-    //create member punya page
+    //create form add member 
     public function create()
     {
         return view('member.create');
     }
 
-    //request means from form
+    //request means from form (add new member)
     public function store(Request $request)
     {
         Member::create($request->all());
