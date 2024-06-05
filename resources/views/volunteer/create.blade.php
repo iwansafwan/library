@@ -19,7 +19,8 @@
                         <h5 class="card-title">Volunteer Form</h5>
 
                         <!-- General Form Elements -->
-                        <form>
+                        <form action="{{route('volunteer.store')}}" method="POST">
+                            @csrf   
                             <div class="row mb-3">
                                 <label for="name" class="col-sm-3 col-form-label">Name</label>
                                 <div class="col-sm-9">
