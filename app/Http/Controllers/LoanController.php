@@ -57,12 +57,11 @@ class LoanController extends Controller
             ]);
             $book->available = 'No';
             $book->save();
+            return redirect(route('loan.index'));
         } else {
-            return back()->withInput($request->input());
+            // return back()->withInput($request->input());
+            return 'test';
         }
-
-
-        return redirect(route('loan.index'));
     }
 
     /**

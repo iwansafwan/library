@@ -22,7 +22,7 @@ class BookFactory extends Factory
             'publisher' => fake()->company(),
             'year' => fake()->year(),
             'category' => fake()->randomElement($array = ['Novel', 'Religion', 'Academic', 'Children', 'General Reading']),
-            'available' => 'yes',
+            'available' => 'Yes',
         ];
     }
 }
